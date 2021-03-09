@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{A09C9573-4062-4F53-BD67-84FD6029A01C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Methods.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Methods FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Methods.Tests/UnitTest1.cs">
+    <Files>
+      <File FileName="Methods/Arrils.cs" Line="182" Column="35" />
+      <File FileName="Methods/Two-dimensional_arrays.cs" Line="10" Column="33" />
+      <File FileName="Methods.Tests/UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Methods" expanded="True">
+            <Node name="Methods" expanded="True" />
+            <Node name="Methods.Tests" expanded="True">
+              <Node name="UnitTest1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../../циклы/5/Program.cs" line="11" column="16" endLine="11" endColumn="17" offsetX="-1" offsetY="-1" expression="a" liveUpdate="False" />
+    <Watch file="../../../../циклы/9/Program.cs" line="16" column="16" endLine="16" endColumn="22" offsetX="-1" offsetY="-1" expression="tsifra" liveUpdate="True" />
+    <Watch file="../../../../циклы/9/Program.cs" line="17" column="16" endLine="17" endColumn="17" offsetX="-1" offsetY="-1" expression="a" liveUpdate="False" />
+    <Watch file="../../../../циклы/9/Program.cs" line="21" column="20" endLine="21" endColumn="31" offsetX="-1" offsetY="-1" expression="kolichestvo" liveUpdate="False" />
+    <Watch file="../../../../циклы/11/Program.cs" line="16" column="16" endLine="16" endColumn="22" offsetX="-1" offsetY="-1" expression="chislo" liveUpdate="False" />
+    <Watch file="../../../../циклы/11/Program.cs" line="17" column="16" endLine="17" endColumn="20" offsetX="-1" offsetY="-1" expression="last" liveUpdate="False" />
+    <Watch file="../../../../массивы/2/Program.cs" line="22" column="20" endLine="22" endColumn="23" offsetX="-1" offsetY="-1" expression="max" liveUpdate="False" />
+    <Watch file="../../../../массивы/2/Program.cs" line="20" column="44" endLine="20" endColumn="45" offsetX="-1" offsetY="-1" expression="i" liveUpdate="False" />
+    <Watch file="../../../../массивы/2/Program.cs" line="25" column="20" endLine="25" endColumn="28" offsetX="-1" offsetY="-1" expression="maxIndex" liveUpdate="False" />
+    <Watch file="../../../../массивы/9/Program.cs" line="8" column="18" endLine="8" endColumn="37" offsetX="-1" offsetY="-1" expression="array" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

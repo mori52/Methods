@@ -1,0 +1,6 @@
+/Users/mariacvetkova/Projects/Methods/Methods/bin/Debug/Methods.exe
+/Users/mariacvetkova/Projects/Methods/Methods/bin/Debug/Methods.pdb
+/Users/mariacvetkova/Projects/Methods/Methods/obj/Debug/Methods.csprojAssemblyReference.cache
+/Users/mariacvetkova/Projects/Methods/Methods/obj/Debug/Methods.csproj.CoreCompileInputs.cache
+/Users/mariacvetkova/Projects/Methods/Methods/obj/Debug/Methods.exe
+/Users/mariacvetkova/Projects/Methods/Methods/obj/Debug/Methods.pdb
