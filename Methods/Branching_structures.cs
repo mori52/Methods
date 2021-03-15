@@ -3,131 +3,138 @@ namespace Methods
 {
     public class Branching_structures
     {
-        private static void Task1()
+        public static void Main()
+        {
+        }
+
+
+        private static int Task1(int a, int b)
         {
             Console.WriteLine("Выведите в консоль ответ");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-
             if (a > b)
             {
-                Console.WriteLine(a + b);
+                return a + b;
             }
             else if (a == b)
             {
-                Console.WriteLine(a * b);
+                return a * b;
             }
-            else if (a < b)
+            else
             {
-                Console.WriteLine(a - b);
+                return a - b;
             }
+            
         }
 
-        private static void Task2()
+        private static string Task2(int x, int y)
         {
             Console.WriteLine("Определить какой четверти принадлежит точка с координатами (X,Y):");
-
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
 
             if (x > 0)
                 if (y > 0)
                 {
-                    Console.WriteLine("Первая четверть");
+                    string ch = "Первая четверть";
+                    return ch;
                 }
                 else
                 {
-                    Console.WriteLine("Четвертая четверть");
+                    string ch = "Четвертая четверть";
+                    return ch;
                 }
             else if (x < 0)
                 if (y > 0)
                 {
-                    Console.WriteLine("Вторая четверть");
+                    string ch = "Вторая четверть";
+                    return ch;
                 }
                 else
                 {
-                    Console.WriteLine("Третья четверть");
+                    string ch = "Третья четверть";
+                    return ch;
                 }
-            else if (x == 0 && y == 0)
+            else 
             {
-                Console.WriteLine("Не принадлежит ни одной четверти");
+                string ch = "Не принадлежит ни одной четверти";
+                return ch;
             }
         }
 
-        private static void Task3()
+        private static string Task3(int a, int b, int c)
         {
             Console.WriteLine("Выведите в консоль числа в порядке возрастания");
-
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
 
             if (a > b && a > c)
                 if (b > c)
                 {
-                    Console.WriteLine($"{c}, {b}, {a}");
+                    string x = c +" "+b +" "+a;
+                    return x;
                 }
                 else
                 {
-                    Console.WriteLine($"{b}, {c}, {a}");
+                    string x = b + " " + c + " " + a;
+                    return x;
                 }
             else if (b > a && b > c)
                 if (a > c)
                 {
-                    Console.WriteLine($"{c}, {a}, {b}");
+                    string x = c + " " + a + " " + b;
+                    return x;
                 }
                 else
                 {
-                    Console.WriteLine($"{a}, {c}, {b}");
+                    string x = a + " " + c + " " + b;
+                    return x;
                 }
             else if (c > a && c > b)
                 if (a > b)
                 {
-                    Console.WriteLine($"{b}, {a}, {c}");
+                    string x = b + " " + a + " " + c;
+                    return x;
                 }
                 else
                 {
-                    Console.WriteLine($"{a}, {b}, {c}");
+                    string x = a + " " + b + " " + c;
+                    return x;
                 }
-            else if (a == b && b == c && a == c)
+            else
             {
                 Console.WriteLine($"{c}, {b}, {a}");
+                string x = c + " " + b + " " + a;
+                return x;
             }
         }
 
-        private static void Task4()
+        private static string Task4(int a, int b, int c)
         {
             Console.WriteLine("Выведите в консоль решение(значения X) квадратного уравнения стандартного вида, где AX2+BX+C=0");
-
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
 
             int D = b * b - 4 * a * c;
 
             if (D < 0)
             {
-                Console.WriteLine("Корней нет");
+                throw new Exception("Корней нет");
+                
             }
             else if (D == 0)
             {
                 int x = -b / (2 * a);
-                Console.WriteLine($"У уравнения один корень - {x}");
+                string y = "У уравнения один корень " + x;
+                return y;
             }
-            else if (D > 0)
+            else
             {
                 double x1 = (-b + Math.Pow(D, 0.5d)) / (2 * a);
                 double x2 = (-b - Math.Pow(D, 0.5d)) / (2 * a);
-                Console.WriteLine($"У уравнения два корня: {x1}, {x2}");
+                string y = "У уравнения два корня: " + x1 + ", " + x2;
+                return y;
             }
         }
 
-        private static void Task5()
+        private static string Task5(int a)
         {
             Console.WriteLine("Выведите в консоль прописную запись этого числа");
 
-            int a = Convert.ToInt32(Console.ReadLine());
             int b = a / 10;
             int c = a % 10;
 
@@ -136,86 +143,78 @@ namespace Methods
                 switch (c)
                 {
                     case 1:
-                        Console.WriteLine("одиннадцать");
-                        break;
+                        return "одиннадцать";
                     case 2:
-                        Console.WriteLine("двенадцать");
-                        break;
+                        return "двенадцать";
                     case 3:
-                        Console.WriteLine("тринадцать");
-                        break;
+                        return "тринадцать";
                     case 4:
-                        Console.WriteLine("четырнадцать");
-                        break;
+                        return "четырнадцать";
                     case 5:
-                        Console.WriteLine("пятнадцать");
-                        break;
+                        return "пятнадцать";
                     case 6:
-                        Console.WriteLine("шестнадцать");
-                        break;
+                        return "шестнадцать";
                     case 7:
-                        Console.WriteLine("семьнадцать");
-                        break;
+                        return "семьнадцать";
                     case 8:
-                        Console.WriteLine("восемьнадцать");
-                        break;
+                        return "восемьнадцать";
                     case 9:
-                        Console.WriteLine("девятнадцать");
-                        break;
+                        return "девятнадцать";
                     case 0:
-                        Console.WriteLine("десять");
-                        break;
+                        return "десять";
                 }
             }
 
+            string x = "";
+
             if (b == 2)
-                Console.Write("двадцать ");
+                x = "двадцать ";
             else if (b == 3)
-                Console.Write("тридцать ");
+                x = "тридцать ";
             else if (b == 4)
-                Console.Write("сорок ");
+                x = "сорок ";
             else if (b == 5)
-                Console.Write("пятьдесят ");
+                x = "пятьдесят ";
             else if (b == 6)
-                Console.Write("шестьдесят ");
+                x = "шестьдесят ";
             else if (b == 7)
-                Console.Write("семьдесят ");
+                x = "семьдесят ";
             else if (b == 8)
-                Console.Write("восемьдесят ");
-            else if (b == 9)
-                Console.Write("девяносто ");
+                x = "восемьдесят ";
+            else
+                x = "девяносто ";
 
             switch (c)
             {
                 case 1:
-                    Console.WriteLine("один");
-                    break;
+                    x += "один";
+                    return x;
                 case 2:
-                    Console.WriteLine("два");
-                    break;
+                    x += "два";
+                    return x;
                 case 3:
-                    Console.WriteLine("три");
-                    break;
+                    x += "три";
+                    return x;
                 case 4:
-                    Console.WriteLine("четыре");
-                    break;
+                    x += "четыре";
+                    return x;
                 case 5:
-                    Console.WriteLine("пять");
-                    break;
+                    x += "пять";
+                    return x;
                 case 6:
-                    Console.WriteLine("шесть");
-                    break;
+                    x += "шесть";
+                    return x;
                 case 7:
-                    Console.WriteLine("семь");
-                    break;
+                    x += "семь";
+                    return x;
                 case 8:
-                    Console.WriteLine("восемь");
-                    break;
+                    x += "восемь";
+                    return x;
                 case 9:
-                    Console.WriteLine("девять");
-                    break;
+                    x += "девять";
+                    return x;
                 case 0:
-                    break;
+                    return x;
             }
         }
     }

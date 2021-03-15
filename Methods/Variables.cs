@@ -3,66 +3,69 @@ namespace Methods
 {
     public class Variables
     {
-        private static void Task1()
+        public static void Main()
         {
-            Console.WriteLine("Выведите в консоль решение (5*A+B^2)/(B-A)");
-
-            Console.WriteLine("Введите первую переменную:");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите вторую переменную:");
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = (5 * a + b * b) / (b - a);
-            Console.WriteLine($"Решение уравнения: {c}");
+            
         }
 
-        private static void Task2()
+        public static double Task1(int a, int b)
+        {
+            Console.WriteLine("Выведите в консоль решение (5*A+B^2)/(B-A)");
+            return (5 * a + b * b) / (b - a);
+        }
+
+        private static int[] Task2(int a, int b)
         {
             Console.WriteLine("Поменяйте содержимое переменных A и B местами:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c;
-            c = a;
+            int tmp = a;
             a = b;
-            b = c;
-            Console.WriteLine(a);
-            Console.WriteLine(b);
+            b = tmp;
+            int[] arr = new int[] { a, b };
+
+            return arr;
         }
 
-        private static void Task3()
+        private static int[] Task3( int a, int b)
         {
             Console.WriteLine("Выведите в консоль результат деления A на B и остаток от деления:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
+            if (b==0)
+            {
+                throw new Exception("b==0");
+            }
+
             int c = a / b;
             int d = a % b;
-            Console.WriteLine(c);
-            Console.WriteLine(d);
+            int[] arr = new int[] { c, d };
+
+            return arr;
         }
 
-        private static void Task4()
+        private static int Task4(int a, int b, int c)
         {
             Console.WriteLine("Выведите в консоль решение(значение X) линейного уравнения стандартного вида, где A*X+B=C:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
+            if (a == 0)
+            {
+                throw new Exception("a==0");
+            }
+
             int x = (c - b) / a;
-            Console.WriteLine(x);
+
+            return x;
         }
 
-        private static void Task5()
+        private static string Task5(int x1, int y1, int x2, int y2)
         {
             Console.WriteLine("Выведите уравнение прямой в формате Y=AX+B:");
 
-            int x1 = Convert.ToInt32(Console.ReadLine());
-            int y1 = Convert.ToInt32(Console.ReadLine());
-            int x2 = Convert.ToInt32(Console.ReadLine());
-            int y2 = Convert.ToInt32(Console.ReadLine());
-            int k = (y1 - y2) / (x1 - x2);
-            int b = y2 - k * x2;
-            Console.WriteLine($"y={k}x-{b}");
+            
+            int a = (y1 - y2) / (x1 - x2);
+            int b = y2 - a * x2;
+
+            string x = "y="+a+"x-"+b;
+            return x;
         }
     }
 }

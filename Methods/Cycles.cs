@@ -1,43 +1,50 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Methods
 {
     public class Cycles
     {
-        public static void Task1()
+        public static void Main()
+        {
+        }
+
+        public static int Task1(int a, int b)
         {
             Console.WriteLine("Возвести число A в степень B:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
             int a1 = a;
 
             for (int i = 1; i < b; i++)
             {
                 a *= a1;
             }
-            Console.WriteLine(a);
+            return a;
         }
 
-        public static void Task2()
+        public static int[] Task2(int a)
         {
             Console.WriteLine("Вывести все числа от 1 до 1000, которые делятся на A");
 
-            int a = Convert.ToInt32(Console.ReadLine());
+            List<int> termsList = new List<int>();
 
             for (int i = 1; i <= 1000; i++)
             {
                 if (i % a == 0)
                 {
-                    Console.WriteLine(i);
-                }
+                    termsList.Add(i);
+                }    
             }
+
+            int[] terms = termsList.ToArray();
+
+            return terms;
         }
 
-        public static void Task3()
+        public static int Task3(int a)
         {
             Console.WriteLine("Найдите количество положительных целых чисел, квадрат которых меньше A.");
 
-            int a = Convert.ToInt32(Console.ReadLine());
             int b = 0;
             for (int i = 1; i < a; i++)
             {
@@ -46,14 +53,13 @@ namespace Methods
                     b++;
                 }
             }
-            Console.WriteLine(b);
+            return b;
         }
 
-        public static void Task4()
+        public static int Task4(int a)
         {
             Console.WriteLine("Вывести наибольший делитель (кроме самого A) числа A");
 
-            int a = Convert.ToInt32(Console.ReadLine());
             int b = 0;
 
             for (int i = 1; i < a; i++)
@@ -63,15 +69,14 @@ namespace Methods
                     b = i;
                 }
             }
-            Console.WriteLine(b);
+            return b;
         }
 
-        public static void Task5()
+        public static int Task5( int a, int b)
         {
             Console.WriteLine("Вывести сумму всех чисел из диапазона от A до B, которые делятся без остатка на 7");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
+            int x = 0;
 
             if (a > b)
             {
@@ -79,28 +84,32 @@ namespace Methods
                 {
                     if (i % 7 == 0)
                     {
-                        Console.WriteLine(i);
+                         x += i;
                     }
                 }
+                return x;   
             }
 
-            if (a < b)
+            else if (a < b)
             {
                 for (int i = a; i <= b; i++)
                 {
                     if (i % 7 == 0)
                     {
-                        Console.WriteLine(i);
+                         x += i;
                     }
                 }
+                return x;
             }
+
+            else
+                throw new Exception("a==b");
         }
 
-        public static void Task6()
+        public static int Task6(int N)
         {
             Console.WriteLine("Выведите N-ое число ряда фибоначчи");
 
-            int N = Convert.ToInt32(Console.ReadLine());
             int a = 1;
             int b = 1;
             int tmp;
@@ -112,19 +121,16 @@ namespace Methods
                 b += tmp;
 
             }
-            Console.WriteLine(a);
+            return a;
         }
 
-        public static void Task7()
+        public static int Task7(int a, int b)
         {
             Console.WriteLine("Найти наибольший общий делитель двух чисел используя алгоритм Евклида");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-
             if (a % b == 0)
             {
-                Console.WriteLine(a / b);
+                return a / b;
             }
             else
             {
@@ -139,15 +145,13 @@ namespace Methods
                         b = b % a;
                     }
                 }
-                Console.WriteLine(a + b);
+                return a + b;
             }
         }
 
-        public static void Task8()
+        public static int Task8(int y)
         {
             Console.WriteLine("Найдите число N методом половинного деления");
-
-            int y = Convert.ToInt32(Console.ReadLine());
 
             double left = 0;
             double right = y;
@@ -166,14 +170,13 @@ namespace Methods
 
                 middle = (left + right) / 2;
             }
-            Console.WriteLine(middle);
+            return (int)middle;
         }
 
-        public static void Task9()
+        public static int Task9(int a)
         {
             Console.WriteLine("Найти количество нечетных цифр числа");
 
-            int a = Convert.ToInt32(Console.ReadLine());
             int tsifra;
             int kolichestvo = 0;
 
@@ -189,32 +192,23 @@ namespace Methods
                     kolichestvo++;
                 }
             }
-            Console.WriteLine(kolichestvo);
+            return kolichestvo;
         }
 
-        public static void Task10()
+        public static int Task10(int a)
         {
             Console.WriteLine("Найти число, которое является зеркальным отображением последовательности цифр заданного числа");
 
-            int a = Convert.ToInt32(Console.ReadLine());
             int last;
 
             while (true)
             {
                 if (a == 0)
-                    break;
+                    throw new Exception("a==0");
                 last = a % 10;
                 a = a / 10;
-                Console.Write(last);
+                return last;
             }
-        }
-
-        public static void Task11()
-        {
-        }
-
-        public static void Task12()
-        {
         }
     }
 }

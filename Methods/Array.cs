@@ -1,21 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Methods
 {
-    public class Arrils
+    public class Array
     {
-        public static void Task1()
+        public static void Main()
         {
-            int[] array = new int[10];
-            Random random = new Random();
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 101);
-                Console.Write(array[i] + " ");
-            }
+        }
 
-            Console.WriteLine();
-
+        public static int Task1(int[] array)
+        {
+            
             int min = 200;
 
             for (int i = 0; i < array.Length; i++)
@@ -26,22 +23,12 @@ namespace Methods
                 }
             }
 
-            Console.WriteLine(min);
+            return min;
         }
 
-        public static void Task2()
+        public static int Task2(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 101);
-                Console.Write(array[i] + " ");
-            }
-
-            Console.WriteLine();
-
+          
             int max = -200;
 
             for (int i = 0; i < array.Length; i++)
@@ -51,22 +38,11 @@ namespace Methods
                     max = array[i];
                 }
             }
-            Console.WriteLine(max);
+            return max;
         }
 
-        public static void Task3()
+        public static int Task3(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 101);
-                Console.Write(array[i] + " ");
-            }
-
-            Console.WriteLine();
-
             int min = 200;
             int minIndex = 0;
 
@@ -79,22 +55,11 @@ namespace Methods
                 }
             }
 
-            Console.WriteLine(minIndex);
+            return minIndex;
         }
 
-        public static void Task4()
+        public static int Task4(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 101);
-                Console.Write(array[i] + " ");
-            }
-
-            Console.WriteLine();
-
             int max = -200;
             int maxIndex = 0;
 
@@ -106,21 +71,11 @@ namespace Methods
                     maxIndex = i;
                 }
             }
-            Console.WriteLine(maxIndex);
+            return maxIndex;
         }
 
-        public static void Task5()
+        public static int Task5(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 10);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-
             int sum = 0;
 
             for (int i = 0; i <= array.Length; i++)
@@ -130,39 +85,25 @@ namespace Methods
                     sum += array[i];
                 }
             }
-            Console.WriteLine(sum);
+            return sum;
         }
 
-        public static void Task6()
+        public static int[] Task6(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 10);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
+            List<int> termsList = new List<int>();
 
             for (int i = array.Length - 1; i >= 0; i--)
             {
-                Console.Write(array[i] + " ");
+                termsList.Add(array[i]);
             }
+
+            int[] terms = termsList.ToArray();
+
+            return terms;
         }
 
-        public static void Task7()
+        public static int Task7(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(0, 10);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-
             int kolichestvo = 0;
 
             for (int i = 0; i < array.Length; i++)
@@ -172,26 +113,11 @@ namespace Methods
                     kolichestvo++;
                 }
             }
-            Console.WriteLine(kolichestvo);
+            return kolichestvo;
         }
 
-        public static void Task8()
+        public static int[] Task9(int[] array)
         {
-        }
-
-        public static void Task9()
-        {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(10, 100);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
             // Метод прямого выбора
 
             for (int i = 0; i < array.Length - 1; i++)
@@ -211,25 +137,20 @@ namespace Methods
                 array[indexOfMin] = tmp;
             }
 
+            List<int> termsList = new List<int>();
+
             for (int i = 0; i < array.Length; i++)
             {
-                Console.Write(array[i] + " ");
+                termsList.Add(array[i]);
             }
+
+            int[] terms = termsList.ToArray();
+
+            return terms;
         }
 
-        public static void Task10()
+        public static int[] Task10(int[] array)
         {
-            int[] array = new int[10];
-            Random random = new Random();
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = random.Next(10, 100);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
             // Метод прямого выбора
 
             for (int i = 0; i < array.Length - 1; i++)
@@ -249,10 +170,16 @@ namespace Methods
                 array[indexOfMax] = tmp;
             }
 
+            List<int> termsList = new List<int>();
+
             for (int i = 0; i < array.Length; i++)
             {
-                Console.Write(array[i] + " ");
+                termsList.Add(array[i]);
             }
+
+            int[] terms = termsList.ToArray();
+
+            return terms;
         }
     }
 }
