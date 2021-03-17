@@ -1,0 +1,9 @@
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.csprojAssemblyReference.cache
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.AssemblyInfoInputs.cache
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.AssemblyInfo.cs
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.csproj.CoreCompileInputs.cache
+/Users/mariacvetkova/Projects/Methods/methodLibrary/bin/Debug/netcoreapp3.1/methodLibrary.deps.json
+/Users/mariacvetkova/Projects/Methods/methodLibrary/bin/Debug/netcoreapp3.1/methodLibrary.dll
+/Users/mariacvetkova/Projects/Methods/methodLibrary/bin/Debug/netcoreapp3.1/methodLibrary.pdb
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.dll
+/Users/mariacvetkova/Projects/Methods/methodLibrary/obj/Debug/netcoreapp3.1/methodLibrary.pdb

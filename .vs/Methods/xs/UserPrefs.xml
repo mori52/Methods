@@ -1,24 +1,8 @@
 ﻿<Properties StartupConfiguration="{A09C9573-4062-4F53-BD67-84FD6029A01C}|Default">
   <MonoDevelop.Ide.ItemProperties.Methods PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Methods/Array.cs">
-    <Files>
-      <File FileName="Methods.Tests/VariablesTests.cs" Line="67" Column="9" />
-      <File FileName="Methods.Tests/CyclesTests.cs" Line="1" Column="7" />
-      <File FileName="Methods.Tests/Mock.cs" Line="1" Column="23" />
-      <File FileName="Methods/Array.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Methods" expanded="True">
-            <Node name="Methods" expanded="True">
-              <Node name="Array.cs" selected="True" />
-            </Node>
-            <Node name="Methods.Tests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
           <Node name="Methods" expanded="True" selected="True" />
         </State>

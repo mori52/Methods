@@ -6,10 +6,9 @@ namespace Methods.Tests
     {
         [TestCase(1, 2, 9)]
         [TestCase(4, 6, 38)]
-        [TestCase(-11, 7, -0.33)]
-        public void Test1(int a, int b, double expected)
+        public void Test1(int a, int b, int expected)
         {
-            int actual = Variables.Task1(a, b);
+            var actual = Variables.Task1(a, b);
 
             Assert.AreEqual(expected, actual);
         }
@@ -19,7 +18,7 @@ namespace Methods.Tests
         [TestCase(-11, 7, new int[] { 7, -11 })]
         public void Test2(int a, int b, int[] expected)
         {
-            int actual = Variables.Task2(a, b);
+            int[] actual = Variables.Task2(a, b);
 
             Assert.AreEqual(expected, actual);
         }
@@ -29,7 +28,7 @@ namespace Methods.Tests
         [TestCase(-11, 7, new int[] { -1, -4 })]
         public void Test3(int a, int b, int[] expected)
         {
-            int actual = Variables.Task3(a, b);
+            int[] actual = Variables.Task3(a, b);
 
             Assert.AreEqual(expected, actual);
         }
@@ -49,7 +48,7 @@ namespace Methods.Tests
         [TestCase(87, 36, 65, 7, "y=1x--58")]
         public void Test5(int x1, int y1, int x2, int y2, string expected)
         {
-            int actual = Variables.Task5(x1, y1, x2, y2);
+            var actual = Variables.Task5(x1, y1, x2, y2);
 
             Assert.AreEqual(expected, actual);
         }

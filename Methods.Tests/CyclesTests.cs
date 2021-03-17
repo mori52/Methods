@@ -18,7 +18,7 @@ namespace Methods.Tests
         [TestCase(3, new int[] { })]
         public void Test2(int a, int[] expected)
         {
-            int actual = Cycles.Task2(a);
+            var actual = Cycles.Task2(a);
 
             Assert.AreEqual(expected, actual);
         }

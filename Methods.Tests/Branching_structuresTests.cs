@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using Methods;
 
 namespace Methods.Tests
 {
@@ -19,7 +20,7 @@ namespace Methods.Tests
         [TestCase(-8, -4, "Третья четверть")]
         public void Test2(int x, int y, string expected)
         {
-            int actual = Branching_structures.Task2(x, y);
+            var actual = Branching_structures.Task2(x, y);
 
             Assert.AreEqual(expected, actual);
         }
@@ -29,7 +30,7 @@ namespace Methods.Tests
         [TestCase(9, 5, 2, "2 5 9")]
         public void Test3(int a, int b, int c, string expected)
         {
-            int actual = Branching_structures.Task3(a, b, c);
+            var actual = Branching_structures.Task3(a, b, c);
 
             Assert.AreEqual(expected, actual);
         }
@@ -39,7 +40,7 @@ namespace Methods.Tests
         [TestCase(1, -1, -2, "У уравнения два корня: 2, -1")]
         public void Test4(int a, int b, int c, string expected)
         {
-            int actual = Branching_structures.Task4(a, b, c);
+            var actual = Branching_structures.Task4(a, b, c);
 
             Assert.AreEqual(expected, actual);
         }
@@ -49,7 +50,7 @@ namespace Methods.Tests
         [TestCase(65, "шестьдесят пять")]
         public void Test5(int a, string expected)
         {
-            int actual = Branching_structures.Task5(a);
+            var actual = Branching_structures.Task5(a);
 
             Assert.AreEqual(expected, actual);
         }

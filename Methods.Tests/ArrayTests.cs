@@ -59,7 +59,7 @@ namespace Methods.Tests
         [TestCase(new int[] { -4, -10, 30 }, new int[] { 30, -10, -4 })]
         public void Test6(int[] array, int[] expected)
         {
-            int actual = Array.Task6(array);
+            int[] actual = Array.Task6(array);
 
             Assert.AreEqual(expected, actual);
         }
@@ -79,7 +79,7 @@ namespace Methods.Tests
         [TestCase(new int[] { -4, -10, 30 }, new int[] { -4, -10, 30 })]
         public void Test9(int[] array, int[] expected)
         {
-            int actual = Array.Task9(array);
+            int[] actual = Array.Task9(array);
 
             Assert.AreEqual(expected, actual);
         }
@@ -89,7 +89,7 @@ namespace Methods.Tests
         [TestCase(new int[] { -4, -10, 30 }, new int[] { 30, -10, -4 })]
         public void Test10(int[] array, int[] expected)
         {
-            int actual = Array.Task10(array);
+            int[] actual = Array.Task10(array);
 
             Assert.AreEqual(expected, actual);
         }

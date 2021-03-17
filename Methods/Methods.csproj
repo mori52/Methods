@@ -32,11 +32,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Variables.cs" />
-    <Compile Include="Branching_structures.cs" />
-    <Compile Include="Cycles.cs" />
-    <Compile Include="Array.cs" />
-    <Compile Include="Two-dimensional_arrays.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

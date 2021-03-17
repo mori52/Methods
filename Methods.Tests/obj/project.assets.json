@@ -1225,6 +1225,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "methodLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/methodLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/methodLibrary.dll": {}
+        }
       }
     }
   },
@@ -4613,13 +4623,19 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "methodLibrary/1.0.0": {
+      "type": "project",
+      "path": "../methodLibrary/methodLibrary.csproj",
+      "msbuildProject": "../methodLibrary/methodLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
-      "NUnit3TestAdapter >= 3.16.1"
+      "NUnit3TestAdapter >= 3.16.1",
+      "methodLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4650,7 +4666,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mariacvetkova/Projects/Methods/methodLibrary/methodLibrary.csproj": {
+              "projectPath": "/Users/mariacvetkova/Projects/Methods/methodLibrary/methodLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
